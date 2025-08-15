@@ -3,7 +3,7 @@ import axios from "axios";
 
 export const userDataContext = createContext()
  function UserContext({children}) {
-  const serverURL ="https://virtual-ai-t2nq.onrender.com"
+  const serverURL = "http://localhost:8000"
   const [userData, setUserData] =useState(null)
      const  [frontendImg, setFrontendImg] = useState(null);
       const  [backendImg, setBackendImg] = useState(null);

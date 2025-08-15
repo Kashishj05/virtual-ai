@@ -10,7 +10,7 @@ import userRouter from "./routes/user.route.js";
 const app = express();
 app.use(
   cors({
-    origin: "https://virtual-ai-3.onrender.com",
+    origin: "http://localhost:5173",
     credentials: true,
   })
 );
@@ -24,3 +24,6 @@ app.listen(port, () => {
   connectdb();
   console.log("server start");
 });
+
+// "https://virtual-ai-3.onrender.com",
+// "https://virtual-ai-t2nq.onrender.com",
